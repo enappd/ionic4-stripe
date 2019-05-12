@@ -14,11 +14,8 @@ export class StripePage {
   constructor(private http: HttpClient) {
   }
 
-  ionViewDidEnter() {
-    setTimeout(() => {
-      this.setupStripe();
-    }, 500)
-
+  ngOnInit() {
+    this.setupStripe();
   }
 
   setupStripe() {
@@ -64,7 +61,7 @@ export class StripePage {
           errorElement.textContent = result.error.message;
         } else {
           console.log(result);
-          this.makePayment(result.id);
+          this.makePayment(result);
         }
       });
     });
