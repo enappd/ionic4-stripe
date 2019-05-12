@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Stripe for PWA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col>
+        Use this Pay button in your PWA's payment page with the attached logic.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/stripe.png"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Stripe Sample</ion-card-title>
+      <ion-row>
+        <ion-col>
+          Total Payment
+        </ion-col>
+        <ion-col>
+          {{currencyIcon}}{{paymentAmount}}
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <form action="/" method="post" id="payment-form">
+
+        <div class="form-row">
+          <div id="card-element">
+            <!-- a Stripe Element will be inserted here. -->
+          </div>
+
+          <!-- Used to display Element errors -->
+          <div id="card-errors" role="alert"></div>
+        </div>
+
+        <ion-button type="submit" color="success" expand="full">Make Payment</ion-button>
+
+      </form>
+    </ion-card-content>
+  </ion-card>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://stripe.com/docs/stripe-js">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Stripe JS Documentation</ion-label>
+    </ion-item>
+    <ion-item href="https://medium.com/enappd/ionic-4-stripe-payment-integration-for-apps-and-pwa-d2bfbf1a7e46">
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-label>Ionic 4 - Stripe Integration Blog</ion-label>
+    </ion-item>
+    <ion-item href="https://store.enappd.com">
+      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+      <ion-label>More Enappd Starters</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

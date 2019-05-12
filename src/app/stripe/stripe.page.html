@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Stripe
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col>
+        Use this Pay button with the attached logic in your app's payment page.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/stripe.png"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Stripe Sample</ion-card-title>
+      <ion-row>
+        <ion-col>
+          Total Payment
+        </ion-col>
+        <ion-col>
+          {{currencyIcon}}{{paymentAmount}}
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="full" color="success" (click)="payWithStripe()">Pay with Stripe</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://ionicframework.com/docs/native/stripe">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Stripe Plugin Documentation</ion-label>
+    </ion-item>
+    <ion-item href="https://github.com/zyramedia/cordova-plugin-stripe">
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-label>Stripe Plugin Repository</ion-label>
+    </ion-item>
+    <ion-item href="https://medium.com/enappd/ionic-4-stripe-payment-integration-for-apps-and-pwa-d2bfbf1a7e46">
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-label>Ionic 4 - Stripe Integration</ion-label>
+    </ion-item>
+    <ion-item href="https://store.enappd.com">
+      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+      <ion-label>More Enappd Starters</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

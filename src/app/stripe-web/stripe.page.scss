@@ -1,0 +1,40 @@
+.welcome-card {
+  max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  ion-card-header {
+    margin: auto;
+  }
+  ion-card-content {
+    margin: auto;
+  }
+}
+.form-row {
+  padding: 10px;
+}
+
+.StripeElement {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
