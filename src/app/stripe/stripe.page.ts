@@ -11,7 +11,7 @@ export class StripePage {
   paymentAmount: string = '3.33';
   currency: string = 'USD';
   currencyIcon: string = '$';
-  stripe_key = 'pk_test_SwGaKHT5AoDU4XP9eErQOZjq00htqO5Gix';
+  stripe_key = 'YOUR_STRIPE_PUBLISHABLE_KEY';
   cardDetails: any = {};
 
   constructor(private stripe: Stripe, private http: HttpClient) {

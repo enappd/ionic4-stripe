@@ -8,7 +8,7 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['stripe.page.scss'],
 })
 export class StripePage {
-  stripe = Stripe('pk_test_SwGaKHT5AoDU4XP9eErQOZjq00htqO5Gix');
+  stripe = Stripe('YOUR_STRIPE_PUBLISHABLE_KEY');
   card: any;
 
   constructor(private http: HttpClient) {

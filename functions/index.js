@@ -1,6 +1,6 @@
 /* eslint-disable promise/always-return */
 const functions = require('firebase-functions');
-const stripe = require('stripe')('sk_test_7Vzm0g5D2Qfj0YqvOH2JWxJU005QHLcyTn');
+const stripe = require('stripe')('YOUR_STRIPE_SECRET_KEY');
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
